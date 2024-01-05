@@ -12,7 +12,7 @@ body{
     color: #fff;
 }
 #header{
-    width:110%;
+    width:100%;
     height: 100vh;
     background-image: url(images/mal5.png);
     background-size:cover ;
@@ -34,7 +34,7 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 15px;
 }
 nav ul li a{
     color: #fff;
@@ -85,7 +85,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-2{
-    flex-basis: 80%; 
+    width: 100%; 
 }
 .sub-title{
     font-size: 60px;
@@ -102,7 +102,7 @@ nav ul li a:hover::after{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding: 0.5rem 100px;
+    padding: 0.5rem 30px;
 }
 .box{
     flex: 1 1 130px;
@@ -136,7 +136,7 @@ nav ul li a:hover::after{
  
 }
 .contact-right{
-    
+    padding-top: 150px;
     flex-basis: 60%;
 }
 .contact-left p{
@@ -193,13 +193,12 @@ form input, form textarea{
     border-radius: 6px;
 }
 .copyright{
-    width: 120%;
+    width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: black;
     font-weight: 300;
     margin-top: 20px;
-    display: flex;
 }
 /*--------------------------------------------Experience------------------------------------------ */
 #experience{
@@ -332,7 +331,7 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 675px){
+@media only screen and (max-width: 600px){
     #header{
         background-image: url(images/mal6.png);
         
@@ -380,6 +379,9 @@ nav .fa-solid{
         font-size: 40px;
         padding:100px 40px;
     }
+    .intro{
+        padding: 0 20px;
+    }
     
     .about-col-1, .about-col-2{
         flex-basis: 100%;
@@ -397,33 +399,34 @@ nav .fa-solid{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+    
     #experience{
-        padding: 0 150px;
+        padding: 0 20px;
     }
     #portfolio{
-        padding: 0 150px;
+        padding: 0 20px;
 
     }
     #contact{
-        padding: 0 150px;
+        padding: 0 20px;
     }
-    .contact-left{
-        flex-basis: 50%;
-    }
-    .contact-right{
-        flex-basis: 40%;
-    }
-    .copyright{
-        
-        font-size: 14px;
-    }
-    .contact-left p{
-        margin-top: 30px;
-    }
-    .contact-left p i{
-        color: #1aceed;
-        margin-right: 10px;
-        font-size: 25px;
+    .edu{
+        margin:0px 40px 20px ; 
     }
     
+    .degree{
+        margin:10px 40px 20px ; 
+    }
+    
+    .uni{
+        margin:10px 40px 20px ; 
+    }
+    
+}
+@media only screen and (max-width: 350px){
+    #header{
+        background-image: url(images/mal7.png);
+        
+        
+    }
 }
